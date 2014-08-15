@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+.fei_histogram_container_style
+{
+    background: none repeat-x scroll 0 0 #FFFFFF !important;
+    border: 2px solid #0063BE;
+    list-style: none outside none;
+    margin: 50px 4.8px 40px 60px;
+    padding: 0;
+    position: relative;
+}
+.fei_histogram_container_rows_style
+{
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+.fei_histogram_container_rows_style div
+{
+    border-top: medium none;
+    position: relative;
+    text-align: center;
+    list-style: none outside none;
+    border-top: 1px dotted #41A3E2;
+}
+.fei_histogram_container_rows_style div p
+{
+    position: absolute;
+    right: 101%;
+    top: -11pt;
+    text-align: center;
+    list-style: none outside none;
+}
+ 
+.fei_histogram_container_col_style
+{
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    border-right: 1px dotted #41A3E2;
+    z-index: 2;
+    list-style: none outside none;
+}
+ 
+.fei_histogram_container_col_style ul
+{
+    list-style: none outside none;
+    text-align: center;
+}
+ 
+.fei_histogram_container_col_style li
+{
+    color: #000000;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    list-style: none outside none;
+}

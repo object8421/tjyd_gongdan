@@ -1,0 +1,33 @@
+/* css for easycloud  */
+*{margin:0 auto 0 auto;padding:0;border:0;}
+body{margin:0 auto; text-align:center;}
+.container{width:800;height:100%; border:0;margin:0 auto ; text-align:left;}
+.input_Login{width:100px;height:15px;border:1px solid #C3D9FF;background:#ffffff;padding:2px 0 0 3px;}
+
+
+/*top*/
+.top{width:800px;height:80px;background:#fff; }
+.top_logo{float:left;width:250px;height:60px;text-align:left;margin:10px auto 0 auto;padding:5px 0 0 0;}
+.top_logo2{float:right;width:265px;height:57px;;margin:10px auto 0 auto;padding:5px 0 0 0;}
+.top_line{float:none;width:800px; height:3px; background:url(images/huxian.jpg) repeat-y  #F3F3F3;}
+
+
+/*main*/
+.main{width:800px;height:465px;background:url(../images/bg.jpg) repeat-x #ffffff;background-position:bottom; padding:0 0 0 0;font-family:"ËÎÌו";position:relative;}
+.main_left{float:left;width:45%;height:428px;}
+.left_text{width:395px;height:40px;padding:20px 0 0 0;}
+.left_title{width:395px;height:25px;font-size:16px;color:#3F3F3F;font-weight:bold;padding:12px 0 0 0;}
+.left_content{width:395px;height:60px;font-size:13px;color:#6F7374;background:url(../images/xiaodian.jpg) repeat-y 13px 1px;line-height:20px;padding:1px 0 0 23px;}
+.left_pic{width:395;height:auto;position:absolute;bottom:0px;}
+
+.main_right{float:right;width:335px;height:350px;}
+.right_top{width:335px;height:auto;padding:20px 0 0 0;}
+.right_center{width:335px;height:160px;background:url(../images/kuang02.jpg) repeat-y;font-size:14px;color:#6F7374;}
+.right_user{float:left;width:255px;height:38px;padding:5% 0 0 45px;}
+.right_name{float:left;width:255px;height:38px;padding:3% 0 0 45px;}
+.right_button{width:120px;height:45px;padding:2% 0 0 190px;}
+.right_bottom{width:335px;height:auto;}
+
+/*footer*/
+.copy_restrict{width:800px;height:35px;background:#F3F3F3; font-size:12px; line-height:20px;text-align:center; }
+.copy_right{width:500px;height:25px;color:#404040;padding-top:5px;}

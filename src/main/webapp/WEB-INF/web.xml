@@ -1,0 +1,78 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Ecloud admin portal</display-name>
+	
+	<context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+            classpath*:spring-*.xml
+           classpath:applicationContext-security.xml 
+        </param-value>
+    </context-param>
+	
+	<!-- Creates the Spring Container shared by all Servlets and Filters -->
+ 	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	
+	<filter>
+        <filter-name>localizationFilter</filter-name>
+        <filter-class>org.springframework.web.filter.RequestContextFilter</filter-class>
+    </filter>
+
+    <filter>
+        <filter-name>springSecurityFilterChain</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>localizationFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+      <filter-name>springSecurityFilterChain</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+	<servlet>
+		<servlet-name>dispatcherServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.htm</url-pattern>
+    </servlet-mapping>
+    
+	<servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>*.json</url-pattern>
+    </servlet-mapping>
+    
+	<!-- 验证码 start -->
+	<servlet>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<servlet-class>com.chinaops.web.ydgd.servlet.CaptchaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CaptchaServlet</servlet-name>
+		<url-pattern>/captcha</url-pattern>
+	</servlet-mapping>
+	<!-- 验证码 end -->
+	
+    <welcome-file-list>
+       <welcome-file>index.jsp</welcome-file>
+       <welcome-file>/index.htm</welcome-file>
+   </welcome-file-list>
+</web-app>

@@ -1,0 +1,10 @@
+git clone http://gitlab.china-ops.com/project/tjyd-gongdan.git
+
+git add . | file
+git commit -m "description"
+git remote add origin http://gitlab.china-ops.com/project/tjyd-gongdan.git
+git push origin -u master
+
+git rm file | "folder"
+git commit -a -m 'descriptiom'
+git push -u origin master

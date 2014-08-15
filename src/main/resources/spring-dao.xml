@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	 http://www.springframework.org/schema/tx
+	 http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	 http://www.springframework.org/schema/aop
+	 http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	 http://www.springframework.org/schema/jee
+	 http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+	 http://www.springframework.org/schema/context
+	 http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<!-- <import resource="applicationContext-db.xml" /> -->
+	<!-- <bean id="ecloudMainConfiguration" class="org.apache.commons.configuration.PropertiesConfiguration"> <constructor-arg index="0" value="cloudconsole.properties" /> </bean> -->
+
+	<!-- one of the properties available; the maximum file size in bytes -->
+	<!-- Multi-Action 用来标识method的变量名定义 -->
+	<bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver">
+		<property name="paramName">
+			<value>action</value>
+		</property>
+		<property name="defaultMethodName">
+			<value>index</value>
+		</property>
+	</bean>
+	<!-- <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping"> <property name="mappings"> <value> /uploadFile.do=uploadFile </value> </property> </bean> -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="500000000000" />
+		<property name="defaultEncoding" value="utf-8" />
+	</bean>
+
+	<!-- <bean name="uploadFile" class="com.chinaops.web.s3.controller.UploadFile"> <property name="commandClass" value="com.chinaops.web.s3.form.UploadBean" /> </bean> -->
+
+
+
+	<!-- ******************************************** Dao持久层 start *********************************************** -->
+	<bean id="clientDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.ClientDaoImpl" scope="prototype" />
+	<bean id="userDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.UserDaoImpl" scope="prototype"/>
+	<bean id="privilegesDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.PrivilegesDaoImpl" scope="prototype"/>
+	<bean id="ticketDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.TicketDaoImpl" scope="prototype"/>
+    <bean id="orderDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.OrderDaoImpl" scope="prototype"/>
+    
+	<!-- ******************************************** Dao持久层 end *********************************************** -->
+    
+    
+	<!-- ******************************************** service 服务层 start ********************************************* -->
+	<bean id="userService" class="com.chinaops.web.ydgd.service.UserService" scope="prototype">
+		<property name="userDaoImpl" ref="userDaoImpl"></property>
+	</bean>
+	<bean id="privilegesService" class="com.chinaops.web.ydgd.service.PrivilegesService" scope="prototype">
+		<property name="privilegesDaoImpl" ref="privilegesDaoImpl"></property>
+	</bean>
+	<bean id="clientService" class="com.chinaops.web.ydgd.service.ClientService" scope="prototype">
+		<property name="clientDaoImpl" ref="clientDaoImpl"></property>
+	</bean>
+	<bean id="ticketService" class="com.chinaops.web.ydgd.service.TicketService" scope="prototype">
+		<property name="ticketDaoImpl" ref="ticketDaoImpl"></property>
+	</bean>
+	<bean id="orderService" class="com.chinaops.web.ydgd.service.OrderService" scope="prototype">
+		<property name="orderDaoImpl" ref="orderDaoImpl"></property>
+	</bean>
+	
+	<!-- ******************************************** service 服务层 end *********************************************** -->
+
+</beans>
