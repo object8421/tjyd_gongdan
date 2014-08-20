@@ -1,0 +1,212 @@
+/* css for easycloud  */
+* {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.container {
+	width: 1003px;
+	height: 100%;
+	border: 0;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.input_Login {
+	width: 100px;
+	height: 15px;
+	border: 1px solid #C3D9FF;
+	background: #ffffff;
+	padding: 2px 0 0 3px;
+}
+
+/*top*/
+.top {
+	width: 1003px;
+	height: 58px;
+	background: url("../../images/main-header.png") repeat-x;
+}
+
+.top_logo {
+	float: left;
+	width: 445px;
+	height: 76px;
+	text-align: left;
+	margin: 10px auto 0 auto;
+	padding: 5px 0 0 0;
+}
+
+.top_logo2 {
+	float: left;
+	width: 445px;
+	height: 65px;
+}
+
+.top_wo_logo {
+	float: right;
+}
+
+.top_line {
+	float: none;
+	width: 800px;
+	height: 3px;
+	background: url(../../images/huxian.jpg) repeat-y #F3F3F3;
+}
+
+/*main*/
+.main {
+	width: 1003px;
+	height: 429px;
+	/* background: url("../../images/center-bg.jpg") repeat-x; */
+	padding: 0 0 0 0;
+	font-family: "宋体";
+	position: relative;
+	overflow: hidden;
+	top: -7px;
+}
+
+.main_left {
+	float: left;
+	width: 45%;
+	height: 428px;
+	padding: 10px 0;
+}
+
+.left_text {
+	width: 395px;
+	height: 40px;
+	padding: 20px 0 0 0;
+}
+
+.left_title {
+	width: 395px;
+	height: 25px;
+	font-size: 16px;
+	color: #3F3F3F;
+	font-weight: bold;
+	padding: 12px 0 0 3px;
+}
+
+.left_content {
+	width: 395px;
+	height: 60px;
+	font-size: 13px;
+	color: #6F7374;
+	background: url(../../images/xiaodian.jpg) repeat-y 13px 1px;
+	line-height: 20px;
+	padding: 1px 0 0 23px;
+}
+
+.left_pic {
+	margin: 50px auto;
+	width: 230px;
+}
+
+.right_center {
+	background: url("../../images/login-bg.png") no-repeat;
+	float: right;
+	width: 550px;
+	height: 350px;
+	margin: 50px 0 0;
+}
+
+.login-form {
+	margin: 90px auto;
+}
+
+.error-msg {
+	color: #FF0000;
+	height: 20px;
+	margin-left: 130px;
+}
+
+.main_right {
+	float: right;
+	width: 335px;
+	height: 350px;
+}
+
+.right_top {
+	width: 335px;
+	height: auto;
+	padding: 20px 0 0 0;
+}
+
+.right_user,.right_name,.right_captcha {
+	width: 288px;
+	margin: 5px auto;
+}
+
+.right_user input,.right_name input {
+	width: 180px;
+}
+
+.right_button {
+	width: 120px;
+	height: 45px;
+	padding: 2% 0 0 190px;
+}
+
+.right_bottom {
+	width: 335px;
+	height: auto;
+}
+
+/*footer*/
+.footer {
+	width: 1003px;
+	height: 50px;
+	background: url("../../images/bottom-bg.jpg") repeat-x;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.copy_right {
+	float: left;
+	padding-top: 5px;
+	width: 390px;
+	position: absolute;
+}
+
+.bottom-logo {
+	float: left;
+	width: 74px;
+}
+
+.px {
+	-moz-border-bottom-colors: none;
+	-moz-border-image: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+}
+
+.vm {
+	vertical-align: middle;
+}
+
+.xg1 {
+	color: #777 !important;
+}
+
+.bottom-comanpy-name {
+	float: right;
+	text-align: left;
+	width: 300px;
+	margin: 10px 0 10 0;
+}
+
+.hotline {
+	float: right;
+	margin: 15px;
+}
+
+.bottom-center {
+	width: 100px;
+}

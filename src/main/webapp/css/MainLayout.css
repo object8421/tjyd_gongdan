@@ -1,0 +1,2417 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.left-dashboard {float:left; margin:10px; }
+.left-dashboard .title {  /* cursor: pointer; */ background-image: url("images/hui-bg.gif"); border-left: 1px solid #E6E6E6; border-right: 1px solid #E6E6E6; height: 27px; padding-left: 5px; padding-top: 6px; -mov-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; }
+.left-dashboard .title img { margin:2px 4px -2px 0px; cursor: pointer; }
+.left-dashboard .resource-list { margin:10px; }
+.left-dashboard .resource-list .resource-list-table { width:100%;border-collapse: collapse;border-spacing: 0px; }
+.left-dashboard .resource-list .resource-list-table tr th { font-weight: normal;text-align: left; padding:5px;}
+.left-dashboard .resource-list .resource-list-table tr td { color:#004B91; padding:5px;/*5px 10px 5px 20px;*/ border-bottom: 1px dashed #DADCE8; margin:0px 20px; }
+.left-dashboard .resource-list .resource-list-table tr th span { padding:2px 0px; }
+.left-dashboard .resource-list .resource-list-table tr td img { margin:2px 5px -10px; }
+.progressbar { width:80%; height:6px;padding:1px; border:1px solid blue;-mov-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;background-color: #FFFFFF; }
+.progressbarUserd { float:left;height:6px;background:blue; } 
+.progressbarTotal { float:left;height:6px;background: white; } 
+
+.dialogMiddleCenter{ text-align:left;}
+/*.tabTopCenter{ border-top:#F00 solid 2px;}wln修改*/
+.header-logo{padding:0 0 0 8px;float:left;}/* ldm 修改 */
+
+.header-logo img{
+	border:0px;height:61px;float:left;margin-top: -3px;  /*易云页面的*//* ldm 修改 */
+	/*border:0px;float:left;margin-left: 30px;margin-top: 4px; /*联通页面*/
+}
+.welcome-01{font-size:14px;color:#000; font-weight:bold;float:right;text-align:right; background:url(images/welcome_bg.png) repeat-x ; height:30px; padding-left:5px; padding-right:30px; line-height:30px; }/* ldm 修改 */
+.welcome-02{float:right;background:url(images/welcome_bg2.png) no-repeat ;height:30px; width:72px;padding-top:5px;padding-left:12px;}/*ldm 新增 */
+.welcome-top{float:right;}
+.welcome-top img{border: 0 none;}
+
+.welcome-01 a:link ,.welcome-01 a:visited,.welcome-01 a:hover,.welcome-01 a:active{color:#000 !important;text-decoration:none;}/* ldm 修改 */
+/*.welcome span{ background:url(images/welcome_quit_bg.png) no-repeat; padding-left:20px; padding-right:20px; margin-left:15px;} ldm 新增 */
+/*.welcome{font-size:14px;color:#fff;float:right;text-align:right; background:url(images/welcome_bg.png) repeat-x; height:25px; padding-left:10px; padding-right:10px; line-height:25px;}/* ldm 修改 */
+
+
+.section_links{color:#000000;font-size:13px;float:right;padding-top:6px;display:inline;}/* ldm 修改 */
+.section_links p{text-align: right; margin:0; padding:4px 15px 6px 0;_padding:0 10px 8px 0;height:18px;}/* ldm 新增 */
+.section_links a:link ,.section_links a:visited,.section_links a:hover,.section_links a:active{ color:#000000;text-decoration:none;font-weight:bold;}/* ldm 修改-- 2011-12-16 zlq */
+.tiny{color:#666666;font-size:12px; margin-top:0px; margin-bottom:0px;}/* ldm 修改 */
+
+.nav{ float:left; margin:33px 0 0 25px;}/* ldm 新增 */
+.nav ul{list-style: none; padding:0; margin:0;}/* ldm 新增 */
+.nav li{ float:left;}/* ldm 新增 */
+.nav li.live1 a {color: #e7141a; font-weight:bold; text-decoration:none;text-align:center;display: inline-block;background: url(images/nav_up.png) no-repeat; width:94px; height:33px; line-height:35px; }/* ldm 新增 */
+.nav li.live1 a:hover {text-decoration: none;}/* ldm 新增 */
+.nav li.live2 a {color: #333; text-decoration:none; margin-left:2px;text-align:center;display: inline-block; width:94px; height:28px; line-height:28px;background: url(images/nav_down.png) no-repeat; padding-top:2px;}/* ldm 新增 */
+.nav li.live2 a:hover {text-decoration: none; text-decoration:none;background: url(images/nav_up.png) no-repeat;color: #333;}/* ldm 新增 */
+.welcome-02 a.exit-link { padding-left:3px; color:#333;}
+
+
+/*|- add by harley ren*/
+.left-menu-vpanel ,.content-wrapper-panel {
+	border:1px solid #B9B8B6;
+	background-color:#FFFFFF;
+}
+
+.left-menu-vpanel,.main-menu-vpanel {width:100%;background-color: #F4F4F6;}
+
+.main-menu-vpanel {
+	height:100%;
+	
+}
+.select_tabpanel{
+	border-top-color: #F50000;
+}
+
+#main-layout {
+	width: 100%;
+    height: 99%;
+    margin: 0px auto;
+}
+
+#main-header {
+	position:absolute;
+    height: 70px;
+	left:0px;
+	top:0px;
+	width:100%;
+    background:url(../images/main-header.png) repeat-x;
+}
+
+#main-footer {
+	position:absolute;
+	bottom:0px;
+	left:0px;
+    height:40px;
+	width:100%;
+    /*
+    background-color: #930;
+    */
+}
+
+#root-panel { 
+ 	background: none repeat scroll 0 0 #F2F3F7;
+    border: 1px solid #E1E0DE;
+    bottom: 47px;
+    left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px;
+    padding: 6px;
+    position: fixed;
+    top: 50px;
+    width: 100%; 
+}
+.ui-layout-center { width:83.3%;  height:491px; float:right; padding: 10px; border: 1px solid #BBBBBB; }
+.ui-layout-west { width:13%; height:491px; float:left; padding: 10px; border: 1px solid #BBBBBB;background: #E6E6E7; overflow: auto;}
+.middle-center { height:75.5%; padding: 10px; border: 1px solid #BBBBBB; }
+.middle-south { height:70px; padding: 10px; border: 1px solid #BBBBBB; background:#FFF; overflow: auto; }
+
+input[type='text'] { width:168px; border:1px solid #DBDBDB;padding-left:2px; } 
+input[type='password'] { width:168px; border:1px solid #DBDBDB; } 
+input.mltsel[type='text'] { border:1px solid #DBDBDB; width:auto; }
+input#mltselbtn[type='image'] { border:0px; width:auto; margin-left:-12px; }
+input[type='email'] { width:168px; border:1px solid #DBDBDB; } 
+input[type='button'] { padding:3px 15px; } 
+select { width:172px; border:1px solid #DBDBDB; } 
+#pager input[type='text'] { width:28px; border:1px solid #DBDBDB; } 
+#pager select { width:45px; border:1px solid #DBDBDB; }
+
+.centerBar {
+	bottom: 110px;
+	cursor: s-resize;
+	font-size: 1px;
+	height: 8px;
+	left: 10px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-align: left;
+	border: 0 solid #BBBBBB;
+}
+
+.keys_accordion h3 span { margin-right: 50px; }
+.keys_accordion h3 lable { margin-left:20px; }
+.swMain { width:835px; }
+.wizard-step img { text-align:center; margin-left:5px; border:0px none; }
+.wizard-step-line { height:40px;border-bottom: 1px solid #A6C9E2; width:102%;margin-left:-16px; }
+
+.menu-item-vpanel {
+	width:100%;
+}
+
+.main-layout-pane {
+	width: 100%;
+	margin: 0 auto;
+    max-width: 1200px;
+    clear: both;
+    height:100%;
+}
+
+.sidebar {
+	background: none repeat scroll 0 0 #EEEEEE;
+    height: 100%;
+    padding: 0 1.5%;
+    position: relative;
+    width: 20.5%;
+}
+
+.inner {
+    float: right;
+    width: 72.25%;
+}
+/* add by harley ren -| */
+#dir_path {
+ 	line-height:26px;
+    height:28px;
+    color : blue;
+    font-family : Courier New;
+    font-size : 12pt;
+    margin-top:-5px;
+    width:100%;
+}
+#main-jqgrid {
+	width:100%;
+}
+#all_bucket_name {
+	padding:5px;
+	line-height:20px;	
+}	
+.toolbar {
+	line-height:50px;
+	width:100%;
+	padding:5px 0px 2px 10px;
+	margin-top:-10px;
+	margin-left:-10px;
+	display: inline-block;
+	overflow: hidden;
+}
+.margin_left {
+	margin-left:-10px;
+}
+.toolbar table {
+	margin-top:-10px;
+}
+#left_menu_panel .menu-title {
+	background:#EEEFF0;
+	width:100%;
+	padding-bottom:11px;
+	border-bottom:2px solid #CCCCCC;
+	margin-left:-10px;
+	padding-right:20px;
+}
+
+.ui-layout-center .title_,.menu-title .title {
+	background: url("images/menu_title.gif") repeat-x scroll 0 0 transparent;
+	height:33px;
+	width:100%;
+	padding:5px 0px 2px 20px;
+	margin-top:-10px;
+	border:0px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+.center-title {
+	float:left; 
+	font-size:20px;
+	font-weight:bold;
+	width:30%;
+}
+.center-bar {
+	float:right;
+	width: 35em;
+	right:2em;
+}
+.center-bar .center-bar-left {
+	float:left;
+	padding-right:30px;
+}
+.center-bar .center-bar-center {
+	float:left;
+	margin-right: 5px;
+}
+.center-bar .center-bar-right {
+	float:left;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	cursor: pointer;
+    float: right;
+    line-height: 20px;
+    margin: 5px 8px 5px 8px;
+    overflow: visible;
+    padding: 1px 5px;
+    background: url("../images/button-default.jpg") repeat-x;
+    color:#000;
+    border:1px solid #C0C3C2;
+    font-weight:normal;
+    width: auto;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -khtml-border-radius:5px;
+    border-radius:5px;
+}
+.ui-dialog .ui-dialog-buttonpane button:hover {
+	background: url("../images/button-select.jpg") repeat-x;
+    border:1px solid #686969;
+}
+.ui-dialog .ui-dialog-buttonpane button[disabled] {
+    background: url("../images/button-default.jpg") repeat-x;
+    cursor: default;
+}
+.ui-widget {
+	font-size:12px;
+	font-weight:normal;
+}
+#dialog-form ul li {
+	padding:0px;
+	margin:-10px 0px -10px -36px;
+	list-style-type:none;
+	color:red;
+}
+#dialog-form table {}
+#dialog-form table tr th {
+	text-align: right;
+	padding:2px 5px;
+}
+#dialog-form table tr td {
+	padding:2px 5px;
+}
+.menu-group { 
+    background:url("../images/huixian.jpg") repeat-x center bottom transparent;
+    float: left;
+    margin: 2px -10px;
+    padding-bottom: 3px;
+    padding-right: 20px;
+    width: 100%;
+}
+.menu-group img {
+	float:left;
+/* 	height:25px;
+	width:25px; */
+}
+.menu-group span {
+    background-color: #F4F4F6;
+    color: #707070;
+    float: left;
+    font-size: 11px;
+    padding-left: 8px;
+    position: relative;
+    top: -3px;
+}
+.left-menuitem {
+	line-height:30px;
+	clear:both;
+	height:30px;
+	margin-left: -10px;
+    margin-right: -20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.left-menuitem:hover {
+	background:#d3d3d3;/*url("../images/left_menu_hover.jpg") repeat;*/
+	cursor: pointer;
+}
+.left-menuitem img {
+	margin:1.3px -20px 0px 20px;
+	border:0px;
+}
+.left-menuitem a {
+	margin-left:25px;
+	text-decoration: none;
+	color:#000;
+}
+.left-menuitem a:hover {
+	color:#000;
+	text-decoration: none;
+}
+.south-myclass {
+	margin: -10px;
+	padding-bottom:10px;
+	line-height:30px;
+	height:32px;
+	overflow: hidden;
+	background:url('../images/south-title-background.jpg') repeat-x #FFF;
+}
+.south-title-myclass {
+	float:left;
+	margin-left:20px;
+	width:30%;
+	font-weight: bold;
+}
+.south-ul-myclass {
+	float:right;
+	line-height: 40px;
+	margin-right:1em;
+}
+.south-content-myclass {
+	padding-top:20px;
+}
+.south-content-myclass table {
+	border:1px solid #DBDBDB;
+	width:100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.south-content-myclass th {
+	width:15%;
+	text-align: right;
+	padding:5px;
+	border-bottom: 1px solid #DBDBDB;
+}
+.south-content-myclass td {
+	width:35%;
+	text-align: left;
+	padding:5px;
+	border-bottom: 1px solid #DBDBDB;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	color:#000;
+	font-weight: normal;
+}
+#table-dept-of-userinfo-detail table { width:100%; border-collapse: collapse;border-spacing: 0;}
+#table-dept-of-userinfo-detail table th { width:20%;  text-align: center; font-weight:normal; color: #000; background: url("../images/hoverBacTh.jpg") repeat; padding:5px 10px; border:1px solid #DBDBDB;}
+#table-dept-of-userinfo-detail table td { text-align: center; padding:5px; border:1px solid #DBDBDB; width:20%;}
+.base-info {
+	float:left;
+	padding:0px;
+	width:120px;
+	text-align:center;
+	background: url('../images/south-default.jpg') no-repeat;
+}
+.select-info {
+	background: url('../images/south-select.jpg') no-repeat;
+}
+.error-msg {
+	padding-left: 0px;
+	color:#FF0000;
+}
+
+.ui-layout-south div {
+	/*margin-top:-12px;*/
+	margin-left:-5px;
+	table-layout:auto;
+	width:100%;
+	//border:1px solid #EEEFF0;
+}
+.ui-layout-south .title {
+	background: url("images/menu_title.gif") repeat-x scroll 0 0 transparent;
+	//font-style:italic;
+	font-weight:bold;
+	font-size:15px;
+	color:#000000;
+	height:30px;
+	line-height:30px;
+	padding:3px 10px;
+	border:0px;
+}
+.ui-layout-south .title-left {
+	float:left;width:15%;
+	padding-left:12px;
+}
+.ui-layout-south .title-right {
+	float:right;
+	width:25px;
+}
+.ui-layout-south .content {
+	margin:0px;
+	padding:0px;
+	position: relative;
+	display:block
+}
+.ui-layout-south .content .left {
+	float:left;
+	display:block;
+	margin:0px;
+	width:35%;
+	background:#EEEEEE;
+	border:1px solid #CCCCCC;
+	-moz-border-radius:5px 0px 0px 5px;
+	-wekit-border-radius:5px 0px 0px 5px;
+	border-radius:5px 0px 0px 5px;
+	
+}
+.ui-layout-south .content .left .bucket-table {
+	height:auto;
+	width:100%;
+}
+.ui-layout-south .content .left .bucket-table tr th {
+	text-align: right;
+	width:105px;
+}
+.ui-layout-south .content .left .bucket-table tr td {
+	text-align: left;
+	padding-left:10px;
+}
+.ui-layout-south .content .right {
+	margin:0px 0px 0px 20px;
+	width:62%;
+	float:right;
+	display:block
+}
+.ui-layout-south .content .right #container-1 {
+	margin-top:10px;
+}
+.margin-left25 {
+	margin-left:25px;
+}
+.dialog_upload_path {
+	background-color: #f7f7f7;
+	width:101%;
+}
+.dialog_upload_path img ,.folder_detail img ,.dir_path img {
+	margin-bottom: -5px;
+}
+
+.createBucketTips {
+    color: #999999;
+    padding-top: 8px;
+}
+
+.createDir {
+    color: #777777;
+    margin-top: 5px !important;
+}
+.ico-object-folder {
+    background: url("images/ico-oss-object.png") no-repeat 18px 0px;
+    padding: 4px 0px 4px 40px;
+    line-height:28px;
+    margin:1px;
+    text-indent: 25px;
+}
+.ico-object-file {
+    background: url("images/ico-oss-object.png") no-repeat 18px -62px;
+    padding: 4px 0px 4px 40px;
+    line-height:28px;
+    margin:1px;
+    text-indent: 25px;
+}
+.progressBarBoxContent {
+	margin-left: 0pt; 
+	background:#CCCCCC; 
+	height:15px; 
+	width:0%;
+	text-align:left;
+}
+
+#south_table tr{
+	/*text-decoration:underline;*/
+}
+#south_table th{
+	text-align: left;
+}
+#south_table td{
+}
+table#groups_detail_list {padding:2px 5px; border-collapse: collapse;border-spacing:0;}
+table#groups_detail_list th { width:25%; padding:0px; text-align:center; background: url("../images/hoverBacTh.jpg") repeat; border:1px solid #DBDBDB; height:30px; }
+table#groups_detail_list td { width:25%; border:1px solid #DBDBDB; }
+/* 
+.menu-title .button-menu2 {
+	background:url("images/bucket-button1.gif") no-repeat scroll 0 -390px transparent;
+	height:26px;
+	width:95px;
+	margin-left:5px;
+	border:0px;
+}
+.menu-title .button-menu2:hover {
+	background:url("images/bucket-button1.gif") no-repeat scroll 0 -416px transparent;
+}
+.menu-title .button-menu2[disabled]{
+	background:url("images/bucket-button1.gif") no-repeat scroll 0 -390px transparent;
+	height:26px;
+	width:95px;
+	margin-left:5px;
+	border:0px;
+}
+
+#table-instance-detail ,#volume_content ,#snapshot_content ,#keypair_content ,#securitygroups_content,#table-dept-detail { padding-bottom:0px; } */
+/* #table-dept-detail table tr ,#table-instance-detail table tr ,#table-dept-of-userorder-detail tr { border-bottom:1px solid #DBDBDB; }
+#table-dept-detail table tr td ,#table-instance-detail table tr td ,#volume_content table tr td,#snapshot_content table tr td ,#keypair_content table tr td ,#securitygroups_content table tr td { border-bottom:1px solid #DBDBDB; }
+#table-dept-detail table tr th ,#table-instance-detail table tr th ,#volume_content table tr th ,#snapshot_content table tr th ,#keypair_content table tr th ,#securitygroups_content table tr th { padding:5px; border-bottom:1px solid #DBDBDB; }
+#table-dept-detail img ,#table-instance-detail img ,#volume_content img ,#snapshot_content img,keypair_content img ,#securitygroups_content img {margin: 0px 5px; cursor: pointer; }
+ */
+/* 	.userInfor_table { width:100%; border-collapse: collapse; border-spacing: 0px; }
+	.userInfor_table tr th { text-align: center;  color: #2E6E9E; font-weight: bold;background: url("../images/hoverBacTh.jpg") repeat; padding:5px 10px; border:1px solid #DBDBDB; }
+	.userInfor_table tr td { text-align: center; padding:5px; border:1px solid #DBDBDB; }
+	.userInfor_table tr:hover { background: url("../images/hoverBac.jpg") repeat; cursor: pointer; } */
+/*  #table-dept-of-userorder-detail table { 
+ 	width:100%; 
+ 	border-collapse: collapse; 
+ 	border-spacing: 0px; 
+ }
+ #table-dept-of-userorder-detail th {
+ 	text-align: left;
+ 	padding:5px;
+ 	border-bottom:1px solid #DBDBDB;
+ }
+ #table-dept-of-userorder-detail td { 
+ 	text-align: left;
+ 	padding:5px;
+ 	border-bottom:1px solid #DBDBDB;
+ } */
+#grid-col-list {}
+#grid-col-list ul { list-style-type: none; }
+#grid-col-list li { margin:5px 10px; list-style-type: none; }
+
+.dialog-user-form {}
+.dialog-user-form table {}
+.dialog-user-form table tr th { padding: 2px 5px; }
+.dialog-user-form table tr td { padding: 2px 5px; }
+/************************* Button Start ***********************************/
+
+/******* Public Button Start *******/
+/*  normal round Button */ 
+.Button {
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #DDDDDD;
+	background: url("../images/button-default.jpg") repeat-x;
+	padding:3px 15px;
+	color:#000;
+	cursor:pointer;
+}
+.Button:hover {
+	background: url("../images/button-select.jpg") repeat-x;
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2;
+}
+.Button[disabled] {
+	background: url("../images/button-default.jpg") repeat-x;
+	cursor: default;
+	border:1px solid #DDDDDD;
+}
+/*  float:left round Button */
+/* .roundButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px ;
+	-moz-border-radius: 5px ;
+	border-radius: 5px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.roundButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.roundButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+
+.createButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left; 
+	cursor:pointer; 
+	margin:0px 15px 0px 0px;; 
+	padding:4px 10px; 
+}
+.createButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+} */
+/* ShowHide and Refrush start */
+
+#btnShowHideCol {
+	margin-right:-8px;
+	border-radius:5px 0px 0px 5px;
+}
+#btnRefresh {
+	border-radius:0px 5px 5px 0px;
+}
+
+.center-bar-center ul ,#menu-header-button {
+	position: absolute;
+	top:37px;
+	right: 17.3em;
+	z-index: 999;
+	padding:3px;
+	margin: 0;
+	background: #FFF;
+	border:1px solid #DBDBDB;
+	list-style: none outside none;
+	color: #222222;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-khtml-border-radius:5px;
+	border-radius:5px;
+}
+#menu-header-button{
+	right:5em;
+	top:50px;
+}
+.center-bar-center ul li ,#menu-header-button li{
+	list-style: none outside none;
+	clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width: 100px;
+}
+.center-bar-center ul li:hover,#menu-header-button li:hover {
+	background: #EEE;	
+}
+.center-bar-center ul li a,#menu-header-button li a {
+	display: block;
+    line-height: 1.5;
+    padding: 0.2em 0.4em;
+    text-decoration: none;
+    color:#000;
+}
+.center-bar-center ul li a:hover,#menu-header-button li a:hover {
+	color:#000;
+	text-decoration: none;
+}
+.operation-button{
+	border-width:1px;
+	border-style:solid; 
+	border-color:#DDDDDD #DDDDDD #DDDDDD #DDDDDD;
+	background: url("../images/defaulta.png") no-repeat 0px 0px;
+	padding:3px 15px;
+	height:26px;
+	width:103px;
+	color:#000;
+	cursor:pointer;
+}
+.operation-button:hover{
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2;
+	background: url("../images/selecta.png") no-repeat 0px 0px;
+	padding:3px 15px;
+	height:26px;
+	width:103px;
+	color:#000;
+	cursor:pointer;
+}
+.operation-button[disabled]{
+	border-width:1px;
+	border-style:solid; 
+	border-color:#DDDDDD #DDDDDD #DDDDDD #DDDDDD;
+	background: url("../images/defaulta.png") no-repeat 0px 0px;
+	padding:3px 15px;
+	height:26px;
+	color:#BBB;
+	cursor:default;
+}
+.input-button {
+	border-width:1px;
+	border-style:solid; 
+	background: url("../images/button-default.jpg") repeat-x;
+	padding:3px 15px;
+	height:26px;
+	color:#000;
+	cursor:pointer;
+	border-color:#DDDDDD #DDDDDD #DDDDDD;
+}
+.input-button:hover {
+	border-width:1px;
+	border-style:solid; 
+	background: url("../images/button-select.jpg") repeat-x;
+	padding:3px 15px;
+	color:#000;
+	cursor:pointer;
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2;
+}
+.input-button[disabled] {
+	border-width:1px;
+	border-style:solid; 
+	background: url("../images/button-default.jpg") repeat-x;
+	padding:3px 15px;
+	color:#888;
+	cursor:default;
+	border-color:#DDDDDD #DDDDDD #DDDDDD;
+}
+.button-corner-all { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+.input-button-right {  
+	-moz-border-radius-topright: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+	border-top-right-radius: 5px; 
+	-moz-border-radius-bottomright: 5px; 
+	-webkit-border-bottom-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	border-color:#DDDDDD #DDDDDD #DDDDDD transparent; 
+}
+.input-button-right:hover {  
+	-moz-border-radius-topright: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+	border-top-right-radius: 5px; 
+	-moz-border-radius-bottomright: 5px; 
+	-webkit-border-bottom-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 transparent;
+}
+.input-button-right[disabled] {  
+	-moz-border-radius-topright: 5px; 
+	-webkit-border-top-right-radius: 5px; 
+	border-top-right-radius: 5px; 
+	-moz-border-radius-bottomright: 5px; 
+	-webkit-border-bottom-right-radius: 5px; 
+	border-bottom-right-radius: 5px; 
+	border-color:#888 #888 #888 transparent;
+}
+.input-button-left { 
+	-moz-border-radius-topleft: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	border-top-left-radius: 5px; 
+	-moz-border-radius-bottomleft: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
+	/* border-color:#DDD #DDD #DDD #DDD; */  
+}
+.input-button-left:hover { 
+	-moz-border-radius-topleft: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	border-top-left-radius: 5px; 
+	-moz-border-radius-bottomleft: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
+	/* border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2;   */
+}
+.input-button-left[disabled] { 
+	-moz-border-radius-topleft: 5px; 
+	-webkit-border-top-left-radius: 5px; 
+	border-top-left-radius: 5px; 
+	-moz-border-radius-bottomleft: 5px; 
+	-webkit-border-bottom-left-radius: 5px; 
+	border-bottom-left-radius: 5px; 
+	/* border-color:#DDD #DDD #DDD #DDD; */
+}
+.ShowhideButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:right;
+	color:#888888;
+}
+.ShowhideButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+	color:#000000;
+}
+.ShowhideButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#AAAAAA;
+}
+.RefrushButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:right; 
+	cursor:pointer; 
+	margin:0px; 
+	margin-right:15px;
+	padding:4px 10px; 
+	color:#888888;
+}
+.RefrushButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+	color:#000000;
+}
+.RefrushButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#AAAAAA;
+}
+/* ShowHide and Refrush end */
+
+
+/******* Public Button End *******/
+
+/* InstanceButton start */
+.searchbar {
+	margin:5px 0px;
+	padding:2px 0px;
+}
+.instanceLog-text-linux {
+	width:760px;
+	height:470px;
+	color: #28FE14;
+	background: #000000;
+}
+.prev_next_button {
+	margin:30px 100px; 10px 100px;
+}
+#images_table_wrapper {  }
+
+.stepTitleDetail { padding:10px 0px; text-indent: 2em; }
+.createInstanceStep2Tbale {}
+.createInstanceStep2Tbale td { padding:.2em; }
+.createInstanceStep2Tbale th { text-align: right; }
+
+.createInstanceStep3 select { width:170px; }
+
+a#aCreateKey { font-weight:bold;color:#FF0000;margin-left: 5px;padding:1px 16px; text-decoration: none; }
+
+.createInstanceStep4 select { width:170px; }
+.securityGroupsWrite { margin:5px 0px; }
+#security_group_table {  border-collapse: collapse; border-spacing: 0px;  }
+#security_group_table tr.table-header th {  padding:5px 10px; border:1px solid #DBDBDB; cursor:default; background: url("../images/table-top-bg.png") repeat-x scroll;}
+#security_group_table  tr td { padding:1px 10px; border:1px solid #DBDBDB; }
+
+#appPort { position: absolute ;z-index: 99999; border:1px solid #ACACAC; display: none; padding:1px; background:#FFF; font-weight:bold; margin-left:40px; margin-top:-20px; color: red; }
+	
+.createInstanceStep5 {}
+.createInstanceStep5 table { width:800px; border-collapse: collapse; border-spacing: 0px; margin:20px auto 0px;}
+.createInstanceStep5 table tr th { padding:3px 10px; text-align: right; }
+.createInstanceStep5 table tr td { padding:3px 10px; text-align: left; }
+.createInstanceStep5 {}
+
+.loadingRun { z-index: 9; margin-left: 76px;margin-top:4px; position: absolute; }
+input.setupRunInstanceButton[type="button"] {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	padding:4px 15px 4px 30px;
+	background: url("../images/button-default.jpg") repeat-x;
+	cursor: default;
+}
+
+.startInstanceButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/button-default.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.startInstanceButton:hover {
+	border:1px solid #686969;
+	background: url("../images/button-select.jpg") repeat-x;
+}
+.startInstanceButton[disabled] {
+	background: url("../images/button-default.jpg") repeat-x;
+	cursor: default;
+}
+.destroyInstanceButton { 
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px; 
+}
+.destroyInstanceButton:hover { 
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969; 
+}
+.destroyInstanceButton[disabled] {
+	 background: url("../images/disableButton.jpg") repeat-x; 
+	 cursor: default; 
+}
+.cloneInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px; 
+}
+.cloneInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.cloneInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.stopInstanceButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.stopInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.stopInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.vncConnectionButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px; 
+}
+.vncConnectionButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.vncConnectionButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.logInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px; 
+}
+.logInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.logInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.restartInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.restartInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.restartInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.resetInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.resetInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.resetInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.setHostProtectionInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.setHostProtectionInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.setHostProtectionInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+.createInstanceButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left; 
+	cursor:pointer; 
+	margin:0px 15px 0px 0px;; 
+	padding:4px 10px; 
+}
+.createInstanceButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createInstanceButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+a.instanceRedirectVolume {
+	text-decoration:none; 
+	cursor: pointer;
+	color:blue;
+}　
+/* #span_error,#mod_desc_span_error,#instance_name_error ,#instance_desc_error { color:red; } */
+#lbxIPs-error,#lbxSecurityGroups-error { color:red; }
+
+/* InstanceButton end */
+
+/* ShowHide and Refrush start */
+.ShowhideButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:right;
+	color:#111111;
+}
+.ShowhideButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+	color:#000000;
+}
+.ShowhideButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#AAAAAA;
+}
+.RefrushButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:right; 
+	cursor:pointer; 
+	margin:0px; 
+	margin-right:15px;
+	padding:4px 10px; 
+	color:#111111;
+}
+.RefrushButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+	color:#000000;
+}
+.RefrushButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#AAAAAA;
+}
+/* ShowHide and Refrush end */
+
+/* Volume Button start */
+.createVolumeButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifyVolumeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.attachVolumeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.attachVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.attachVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.detachVolumeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.detachVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.detachVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteVolumeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	color:#BBBBBB;
+}
+.createSnapshotInVolumeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.createSnapshotInVolumeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createSnapshotInVolumeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.CVSButton {
+	background: url("../images/normalButton.jpg") repeat-x;
+	border:1px solid #C0C3C2;
+	-webkit-border-radius: 5px ;
+	-moz-border-radius: 5px ;
+	border-radius: 5px ;
+	padding:4px 10px;
+	cursor:pointer;
+	float:left;
+}
+.CVSButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.CVSButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Volume Button end */
+
+/* Keypair Button start */
+.createKeypairButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createKeypairButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createKeypairButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteKeyPairButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteKeyPairButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteKeyPairButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Keypair Button end */
+
+/* SecurityGroup Button start */
+.createSecurityButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createSecurityButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createSecurityButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteSecurityButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteSecurityButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteSecurityButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* SecurityGroup Button end */
+
+/* elasticips Button start */
+.boundElasticipsButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left; 
+	cursor:pointer; 
+	margin:0px 15px 0px 0px;; 
+	padding:4px 10px; 
+}
+.boundElasticipsButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.boundElasticipsButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.unBoundElasticipsButton {
+		background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left; 
+	cursor:pointer; 
+	margin:0px 15px 0px 0px;; 
+	padding:4px 10px; 
+}
+.unBoundElasticipsButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.unBoundElasticipsButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* SecurityGroup Button end */
+
+/* Snapshot Button start */
+.createSnapshotButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createSnapshotButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createSnapshotButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifySnapshotButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifySnapshotButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifySnapshotButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* .deleteSnapshotButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteSnapshotButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteSnapshotButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	color:#BBBBBB;
+} */
+.roundVolumeInSnapshotButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float:left; 
+	cursor:pointer; 
+	padding:4px 10px;
+}
+.roundVolumeInSnapshotButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.roundVolumeInSnapshotButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.createVolumeInSnapshotButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.createVolumeInSnapshotButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createVolumeInSnapshotButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Snapshot Button end */
+
+/* User Button end */
+#userLog-table {}
+#userLog-table tr td{ padding:2px 10px;}
+
+.createUserButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createUserButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createUserButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifyUserButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyUserButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyUserButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteUserButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteUserButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteUserButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* User Button end */
+
+/* Company Button start */
+.createCompanyButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createCompanyButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createCompanyButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifyCompanyButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyCompanyButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyCompanyButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.createAccountCompanyButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.createAccountCompanyButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createAccountCompanyButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.resourceCompanyButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.resourceCompanyButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.resourceCompanyButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.refreshCompanyButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.refreshCompanyButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.refreshCompanyButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Company Button end */
+
+/* Role Button start */
+.createRoleButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createRoleButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createRoleButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifyRoleButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyRoleButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyRoleButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteRoleButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteRoleButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteRoleButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.assignRolePrivilegeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.assignRolePrivilegeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.assignRolePrivilegeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Role Button end */
+/* Key Button start */
+.deleteKeyButton,.deleteSecuritGroups {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 5px ;
+	-moz-border-radius: 5px ;
+	border-radius: 5px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteKeyButton:hover,.deleteSecuritGroups:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteKeyButton[disabled],.deleteSecuritGroups[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+}
+/* Key Button end */
+
+/* Privilege Button start */
+.createPrivilege {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createPrivilege:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createPrivilege[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+}
+.modifyPrivilegeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyPrivilegeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyPrivilegeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deletePrivilegeButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deletePrivilegeButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deletePrivilegeButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Privilege Button end */
+
+/* Department Button start */
+#dialog-order-table {border-collapse: collapse;border-spacing: 0px; width:650px;}
+#dialog-order-table tr td {line-height: 25px;vertical-align: top; padding:5px 10px; border:1px solid #DBDBDB;}
+#dialog-order-table tr td input { width:30px; height:20px; margin-left:30px; margin-right:5px; }
+#dialog-order-table tr td div { width:140px; }
+#dialog-order-table tr td div em {font-size:9px; position:relative; top:-5px;}
+#dialog-order-table tr td div em#maxInstances_id{ position:relative;left:130px; }
+#dialog-order-table tr td div em#maxVolumes_id{ position:relative;left:130px; }
+#dialog-order-table tr td div em#maxSnapshots_id{ position:relative;left:130px; }
+
+#monthProduct1 table { border-collapse: collapse ;border-spacing: 0px; width:650px; }
+#monthProduct1 table tr th { padding: 10px; border:1px solid #DBDBDB;}
+#monthProduct1 table tr td { padding: 10px; text-align: left; border:1px solid #DBDBDB;}
+#monthProduct1 table tr td div { width:140px; }
+#monthProduct1 table tr td span { margin-left:-200px; }
+#monthProduct1 table tr td input { width:30px; height:20px; margin-left:30px; margin-right:5px; }
+#monthProduct1 table tr td div em {font-size:9px; position:relative; top:0px;}
+#monthProduct1 table tr td div em#ecu1_com_id {position:relative;left:130px;}
+#monthProduct1 table tr td div em#volume1_com_id {position:relative;left:130px;}
+#monthProduct1 table tr td div em#snapshot1_com_id {position:relative;left:130px;}
+
+#dayProduct  table { border-collapse: collapse ;border-spacing: 0px;}
+#dayProduct table tr th { padding: 10px; border:1px solid #DBDBDB;}
+#dayProduct table tr td { padding: 10px; text-align: left;border:1px solid #DBDBDB;}
+#dayProduct table tr td div { width:140px; }
+#dayProduct table tr td span { margin-left:-200px; }
+#dayProduct table tr td input { width:30px; height:20px; margin-left:30px; margin-right:5px; }
+#dayProduct table tr td div em {font-size:9px; position:relative; top:0px;}
+#dayProduct table tr td div em#ecu2_com_id {position:relative;left:130px;}
+#dayProduct table tr td div em#volume2_com_id {position:relative;left:130px;}
+#dayProduct table tr td div em#snapshot2_com_id {position:relative;left:130px;}
+
+#hourlyProduct  table { border-collapse: collapse ;border-spacing: 0px;}
+#hourlyProduct table tr th { padding: 10px; border:1px solid #DBDBDB;}
+#hourlyProduct table tr td { padding: 10px; text-align: left;border:1px solid #DBDBDB;}
+#hourlyProduct table tr td div { width:140px; }
+#hourlyProduct table tr td span { margin-left:-200px; }
+#hourlyProduct table tr td input { width:30px; height:20px; margin-left:30px; margin-right:5px; }
+#hourlyProduct table tr td div em {font-size:9px; position:relative; top:0px;}
+#hourlyProduct table tr td div em#ecu3_com_id {position:relative;left:130px;}
+#hourlyProduct table tr td div em#volume3_com_id {position:relative;left:130px;}
+#hourlyProduct table tr td div em#snapshot3_com_id {position:relative;left:130px;}
+
+
+#monthProduct  table { border-collapse: collapse ;border-spacing: 0px; width:650px;}
+#monthProduct table tr th { padding: 10px; border:1px solid #DBDBDB;}
+#monthProduct table tr td { padding: 10px; text-align: left;border:1px solid #DBDBDB;}
+#monthProduct table tr td div { width:140px; }
+#monthProduct table tr td span { margin-left:-200px; }
+#monthProduct table tr td input { width:30px; height:20px; margin-left:30px; margin-right:5px; }
+#monthProduct table tr td div em {font-size:9px; position:relative; top:0px;}
+#monthProduct table tr td div em#ip_com_id {position:relative;left:130px;}
+#monthProduct table tr td div em#elb_com_id {position:relative;left:130px;}
+#monthProduct table tr td div em#ha_com_id {position:relative;left:130px;}
+
+
+.createDeptButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createDeptButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createDeptButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.modifyDeptButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyDeptButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyDeptButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.deleteDeptButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.deleteDeptButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.deleteDeptButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.orderConfigButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.orderConfigButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.orderConfigButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* Department Button end */
+
+/* CompanyCard Button start */
+.createAccountsCard {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createAccountsCard:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createAccountsCard[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.bindAccountsToUser {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.bindAccountsToUser:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.bindAccountsToUser[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.settingAccountsCard {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	border-radius:0px; 
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.settingAccountsCard:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.settingAccountsCard[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.unlockAccountsCard {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.unlockAccountsCard:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.unlockAccountsCard[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+
+/* CompanyCard Button end */
+
+/* DynamicPasswordCard Button start */
+#errorMessages {}
+#dialog-form #errorMessages li { padding:10px 0px; margin: -10px 0 -10px -36px; }
+
+.createDynamicPasswordCardAccountButton {
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 transparent #C0C3C2 #C0C3C2 ; 
+	-webkit-border-radius:5px 0px 0px 5px;;
+	-moz-border-radius:5px 0px 0px 5px;;
+	border-radius:5px 0px 0px 5px;
+	background: url("../images/normalButton.jpg") repeat-x;
+	padding:4px 10px;
+	margin:0px;
+	cursor:pointer;
+	float:left;
+}
+.createDynamicPasswordCardAccountButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.createDynamicPasswordCardAccountButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+.modifyDynamicPasswordCardAccountButton {
+	background: url("../images/normalButton.jpg") repeat-x; 
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 
+	border-radius:5px; 
+	-webkit-border-radius: 0px 5px 5px 0px ;
+	-moz-border-radius: 0px 5px 5px 0px ;
+	border-radius: 0px 5px 5px 0px ;
+	float:left; 
+	cursor:pointer; 
+	margin:0px; 
+	padding:4px 10px;
+}
+.modifyDynamicPasswordCardAccountButton:hover {
+	background: url("../images/hoverButton.jpg") repeat-x; 
+	border:1px solid #686969;
+}
+.modifyDynamicPasswordCardAccountButton[disabled] {
+	background: url("../images/disableButton.jpg") repeat-x; 
+	cursor: default;
+	color:#BBBBBB;
+	border-width:1px;
+	border-style:solid; 
+	border-color:#C0C3C2 #C0C3C2 #C0C3C2 #C0C3C2; 	
+}
+/* DynamicPasswordCard Button end */
+
+/* updateUserPasssword.jsp Start */
+.updateUserPasswordTitle {
+	margin:10px;
+	padding:25px 0px 10px 20px; 
+	border-bottom: 1px solid #DBDBDB;
+	box-shadow:0px 0px .2px 0px #BBB;
+	font-size: 28px;
+	font-weight: bold;
+}
+.updateMessage {
+	height:30px;
+	line-height:30px;
+	margin:25px;
+	padding:5px 20px;
+	background-color: #FEFFD7;
+	border:1px solid #D2D69B;
+	color:#122A8C;
+}
+/* updateUserPasssword.jsp End */
+/************************* Button end ***********************************/
+
+/***********************************/
+.start_instance_dialog table tr td ,.clone_instance_dialog table tr td { padding:3px; }
+.textR {
+	text-align: right;	
+}
+.textL {
+	text-align:left;
+}
+/* rewrite select jqGrid line background  */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	background: url('../images/ui-tr-hover.jpg') repeat-x;
+}
+#dialog-order-overlay.ui-widget-overlay {
+	opacity: 0.5;
+	 position: absolute;
+/* 	 background: url(../images/loading.gif) center center; */
+	 background:#FFF;
+	 color:#000;
+	 font-size:30px;
+	 font-weight:bold;
+	 padding: 220px 0;
+	 text-align:center;
+	 margin:auto 0px;
+	 top: 35px; 
+	 /* left: 0;  */
+	 width: 100%; 
+	 height: 100%;
+}
+/* jqGrid table set border-color */
+.ui-widget-content {
+	border:1px solid #b7b7b7;
+}
+
+/* jqGrid th remove desc/asc icon */
+.ui-jqgrid-hbox .ui-icon{
+	background: none;
+}
+.ui-jqgrid-hbox .ui-state-default .ui-icon{
+	background: none;
+}
+.ui-jqgrid-hbox .ui-widget-content .ui-icon{
+	background: none;
+}
+/* jqGrid body set tr:hover */
+/* .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	background: #f2f3f7;url('../images/ui-tr-hover.jpg') repeat-x;
+} */
+/* jqGrid pager set font-color */
+#pager.ui-state-default, #pager.ui-widget-content #pager.ui-state-default, #pager.ui-widget-header #pager.ui-state-default{
+	color:#777777;
+}
+/* jqGrid pager set border-radius=0 */
+#pager.ui-corner-bottom{
+	-moz-border-radius-bottomleft: 0px; -webkit-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -moz-border-radius-bottomright: 0px; -webkit-border-bottom-right-radius: 0px; border-bottom-right-radius: 0px; 
+}
+/* jqGrid td set padding */
+.ui-jqgrid tr.ui-row-ltr td{
+	padding:0px 5px;	
+}
+}
