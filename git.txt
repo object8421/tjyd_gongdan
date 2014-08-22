@@ -1,14 +1,16 @@
 git clone http://gitlab.china-ops.com/project/tjyd-gongdan.git
 
+#添加并提交文件或文件夹
 git add . | file
 git commit -m "description"
+#指定了git项目后此句可不写，只有第一次往远程添加提交时写
 git remote add origin http://gitlab.china-ops.com/project/tjyd-gongdan.git
 git push origin -u master
 
+#删除已提交的文件或文件夹
 git rm -rf file | "folder"
-git commit -a -m 'descriptiom'
+git commit -m 'descriptiom'
 git push -u origin master
-
 
 #检查已有的配置信息
 git config --list 
