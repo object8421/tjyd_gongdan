@@ -435,3 +435,34 @@ table#share,table#exclusive,table#storage {
 	border:0px;
 	text-align: left;
 }
+
+.ticket-title {
+	height:70px;
+	clear:both;
+	display:hidden;
+	background:#DDD;
+	margin:0px 15px;
+	margin-top:0px;
+	padding:0px 10px;
+}
+.ticket-title .ticket-tit {
+	border-bottom: 1px dotted #000;
+	padding-bottom: 3px;
+}
+.ticket-tit h2 {
+	font-weight: normal;
+}
+.ticket-title .ticket-time {
+	clear:both;
+	width:910px;
+}
+.data-body .ticket-orders { margin:5px 0px; }
+.data-body .ticket-orders table.orders-table { border:0px; }
+.data-body .ticket-orders table.orders-table th { border :0px; text-align: right;font-weight: normal; }
+.data-body .ticket-orders table.orders-table td { border :0px; text-align: left; }
+.data-body .orders-resource { border:1px solid #DBDBDB; margin-bottom: 30px; }
+.data-body .orders-resource table { width:100%; }
+.data-body .orders-resource table th { background:#EDEDED; height:30px; padding-left:10px; border-bottom:1px solid #DBDBDB; text-align: left; }
+.data-body .orders-resource table td {  border-bottom:1px dotted #DBDBDB; text-align: left; }
+.data-body .orders-resource table td.td { border-bottom:1px dotted #DBDBDB; text-align: right; }
+.data-body .orders-resource table td.sum { border-left:1px dotted #DBDBDB;vertical-align: middle;text-align: center;font-weight: bold;color:#F00;font-size: 14px; }
