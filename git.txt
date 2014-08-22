@@ -8,3 +8,12 @@ git push origin -u master
 git rm -rf file | "folder"
 git commit -a -m 'descriptiom'
 git push -u origin master
+
+
+#检查已有的配置信息
+git config --list 
+
+#设置提交者名字
+git config --global user.name "userName"
+#设置提交者邮箱 
+git config --global user.email "userEmailAdress"
