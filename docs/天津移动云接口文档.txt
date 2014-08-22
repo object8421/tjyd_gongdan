@@ -1,0 +1,22 @@
+我们在给天津移动的提交工单的时候要加一个标识，用来代表我方的处理结果。如 1：代表IP已分配；2：代表资源已分配。
+
+receiveTicket.do
+用来接收天津移动的工单。
+http method:POST
+参数：ticketInfo
+参数格式：注<!--  -->中的内容为注释，在实际请求时，可忽略。
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ticket>
+
+<!-- 工单接收时间 -->
+<receiveTime>2014-06-08 10:30:00</receiveTime>
+
+<!-- 工单接收时间 -->
+<ticketId></ticketId>
+
+
+</ticket>
+
+
+
