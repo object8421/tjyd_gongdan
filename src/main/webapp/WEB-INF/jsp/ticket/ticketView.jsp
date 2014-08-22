@@ -52,7 +52,6 @@
 			jQuery(document).ready(function() {
 				$("#ticket_id").text(ticketId);
 				$(".customerMagager").show();
-				alert(customerId);
 				initClientDetail(customerId);
 				initTicketDetail(ticketId);
 			});
@@ -76,37 +75,10 @@
 </head>
 
 <body>
-customerId = <%=customerId %> 
 	<div class="mainLayout" style="">
 		<jsp:include page="../header.jsp"/>
 		<div class="body">
 		<style type="text/css">
-			.ticket-title {
-				height:70px;
-				clear:both;
-				display:hidden;
-				background:#DDD;
-				margin:0px 15px;
-				margin-top:0px;
-				padding:0px 10px;
-			}
-			.ticket-title .ticket-tit {
-				border-bottom: 1px dotted #000;
-				padding-bottom: 3px;
-			}
-			.ticket-tit h2 {
-				font-weight: normal;
-			}
-			.ticket-title .ticket-time {
-				clear:both;
-				width:910px;
-			}
-			.data-body .ticket-orders { margin:5px 0px; }
-			.data-body .ticket-orders table.orders-table { border:0px; }
-			.data-body .ticket-orders table.orders-table th { border :0px; text-align: right;font-weight: normal; }
-			.data-body .ticket-orders table.orders-table td { border :0px; text-align: left; }
-			.data-body .orders-resource table { border:0px; }
-			.data-body .orders-resource table th { background:#EDEDED; padding:8px; }
 		</style>
 			<div class="ticket-title border-all">
 			<%
@@ -161,25 +133,41 @@ customerId = <%=customerId %>
 						<tr><th>工单备注：</th><td colspan="3"><span id="remark">涉及资源减少时，客户经理与客户确认客户资源哪些可以释放。在变更工单中注明！<br>客户经理信息变更；IP地址变更说明</span></td></tr>
 					</table>
 				</div>
-				<div class="orders-resource">
-					<table>
+				<jsp:include page="../order/orderView.jsp"/>
+				<!-- <div class="orders-resource">
+					<table id="cloud">
 						<tr>
 							<th width="10%">资源名称</th><th width="40%">数量</th><th width="25%">价格（元）</th><th width="25%">总计（元）</th>
 						</tr>
 						<tr>
-							<td>计算资源</td><td><span id="res_ecu"></span></td><td></td><td></td>
+							<td class="td">计算资源</td><td><div id="res_ecu"></div></td><td><div id="res_ecu_price"></div></td><td rowspan="7" class="sum"><div id="cloud_sum_price"></div></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td>
+							<td class="td">带宽</td><td><div id="res_bandwidth"></div><td><div id="res_bandwidth_price"></div></td>
 						</tr>
 						<tr>
-							<td></td><td></td><td></td><td></td>
+							<td class="td">IP</td><td><div id="res_ip"></div></td><td><div id="res_ip_price"></div></td>
 						</tr>
-						<tr><td></td><td></td><td></td><td></td></tr>
-						<tr><td></td><td></td><td></td><td></td></tr>
-						<tr><td></td><td></td><td></td><td></td></tr>
+						<tr><td class="td">存储</td><td><div id="res_vol"></div></td><td><div id="res_vol_price"></div></td></tr>
+						<tr><td class="td">快照</td><td><div id="res_snap"></div></td><td><div id="res_snap_price"></div></td></tr>
+						<tr><td class="td">主机保护</td><td><div id="res_ha"></div></td><td><div id="res_ha_price">免费</div></td></tr>
+						<tr><td class="td">负载均衡</td><td><div id="res_elb"></div></td><td><div id="res_elb_price">免费</div></td></tr>
 					</table>
-				</div>
+					<table id="storage">
+						<tr>
+							<th width="10%">资源名称</th><th width="40%">数量</th><th width="25%">价格（元）</th><th width="25%">总计（元）</th>
+						</tr>
+						<tr>
+							<td class="td">存储</td><td><div id="stor_vol"></div></td><td><div id="stor_vol_price"></div></td><td rowspan="3" class="sum"><div class="sum" id="stor_sum_price"></span></td>
+						</tr>
+						<tr>
+							<td class="td">带宽</td><td><div id="stor_bandwidth"></div><td><div id="stor_bandwidth_price"></div></td>
+						</tr>
+						<tr>
+							<td class="td">IP</td><td><div id="stor_ip"></div></td><td><div id="stor_ip_price"></div></td>
+						</tr>
+					</table>
+				</div> -->
 			</div>
 		</div>
 		<jsp:include page="../footer.jsp"/>
