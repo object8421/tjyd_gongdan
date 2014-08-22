@@ -35,7 +35,7 @@
 
 
 	<!-- ******************************************** Dao持久层 start *********************************************** -->
-	<bean id="clientDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.ClientDaoImpl" scope="prototype" />
+	<bean id="customerDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.CustomerDaoImpl" scope="prototype" />
 	<bean id="userDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.UserDaoImpl" scope="prototype"/>
 	<bean id="privilegesDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.PrivilegesDaoImpl" scope="prototype"/>
 	<bean id="ticketDaoImpl" class="com.chinaops.web.ydgd.dao.Impl.TicketDaoImpl" scope="prototype"/>
@@ -51,8 +51,8 @@
 	<bean id="privilegesService" class="com.chinaops.web.ydgd.service.PrivilegesService" scope="prototype">
 		<property name="privilegesDaoImpl" ref="privilegesDaoImpl"></property>
 	</bean>
-	<bean id="clientService" class="com.chinaops.web.ydgd.service.ClientService" scope="prototype">
-		<property name="clientDaoImpl" ref="clientDaoImpl"></property>
+	<bean id="customerService" class="com.chinaops.web.ydgd.service.CustomerService" scope="prototype">
+		<property name="customerDaoImpl" ref="customerDaoImpl"></property>
 	</bean>
 	<bean id="ticketService" class="com.chinaops.web.ydgd.service.TicketService" scope="prototype">
 		<property name="ticketDaoImpl" ref="ticketDaoImpl"></property>

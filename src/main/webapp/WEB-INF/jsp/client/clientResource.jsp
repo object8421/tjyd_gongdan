@@ -24,155 +24,10 @@
 	    <script src="<c:url value='/js/zDrag.js'/>"></script>
 	    <script src="<c:url value='/js/zDialog.js'/>"></script>
 		<style type="text/css">
-			.base_info ,.contact_info {
-				margin:10px;
-			}
-			.Tabs {
-				height:30px;
-				line-height: 30px;
-			}
-			.Tabs ul {
-				list-style: none;
-				padding:0px;
-				margin:0px;
-			}
-			.Tabs ul li:FIRST-CHILD {
-				margin-left:0px;
-			}
-			.Tabs ul li {
-				padding:0 10px;
-				border-radius:5px 5px 0px 0px;
-				display: inline-block;
-				border:1px solid #DDD;
-				border-bottom:0px;
-				margin:-2px;
-			}
-			.selected_tab {
-				background: #F2F2F2;
-			}
-			.data-body table.resource {
-				background: #F2F2F2;
-			}
-			.data-body table.resource th {
-				text-align: left;
-				margin-top:-1px;
-				padding:4px 0px;
-			}
+
 /************************************************************************************************************/
 /************************************************************************************************************/
-		ul, li {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			font-size:12px;
-		}
-		.abgne_tab {
-			clear: left;
-			/* width: 700px; */
-			margin: 10px 0;
-			font-size:12px;
-		}
-		ul.tabs {
-			width: 100%;
-			height: 32px;
-			border-bottom: 1px solid #999;
-			border-left: 1px solid #999;
-			border-radius:5px 0px 0px 0px ;
-			-moz-border-radius:5px 0px 0px 0px;
-			-webkit-border-radius:5px 0px 0px 0px;
-		}
-		ul.tabs li {
-			float: left;
-			height: 31px;
-			line-height: 31px;
-			overflow: hidden;
-			position: relative;
-			margin-bottom: -1px; /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
-			border: 1px solid #999;
-			border-left: none;
-			background: #e1e1e1;
-			border-radius:5px 5px 0px 0px;
-			-moz-border-radius:5px 5px 0px 0px;
-			-webkit-border-radius:5px 5px 0px 0px;
-		}
-		ul.tabs li a {
-			display: block;
-			padding: 0 20px;
-			color: #000;
-			border: 1px solid #fff;
-			text-decoration: none;
-		}
-		ul.tabs li a:hover {
-			background: #ccc;
-		}
-		ul.tabs li.active {
-			background: #EEE;
-			border-bottom: 1px solid #EEE;
-		}
-		ul.tabs li.active a:hover {
-			background: #fff;
-		}
-		div.tab_container {
-			clear: left;
-			width: 100%;
-			border: 1px solid #999;
-			border-top: none;
-			background: #fff;
-		}
-		div.tab_container .tab_content {
-			/* padding: 20px; */
-		}
-		div.tab_container .tab_content h2 {
-			margin: 0 0 20px;
-		}
-		.tab_r1 {
-			border-right:1px solid #c7c7c7;
-			padding-left:10px;
-			height:30px;
-			color:#FFFFFF;
-		}
-		.tab_r2 {
-			padding-left:10px;
-			height:30px;
-			color:#FFFFFF;
-		}
-		.tab_r01 {
-			border-top:1px solid #c7c7c7;
-			border-right:1px solid #c7c7c7;
-			padding-left:10px;
-			height:24px;
-			color:#404040;
-			font-family:Arial, Helvetica, sans-serif;
-		}
-		.tab_r02 {
-			border-top:1px solid #c7c7c7;
-			padding-left:10px;
-			height:24px;
-			color:#404040;
-			font-family:Arial, Helvetica, sans-serif;
-		}
-		.resourceTable th {
-			border:1px solid #DBDBDB;
-			border-bottom:0px;
-		}
-		#share,#exclusive {
-			border-spacing: 0;
-			border-collapse: collapse;
-		}
-		#share td,#exclusive td {
-			border:1px solid #DBDBDB;
-		}
-		#share td .share_detail,#exclusive td .share_detail {
-			border-spacing: 0;
-			border-collapse: collapse;
-			border:0px;
-		}
-		#share td .share_detail td ,#exclusive td .share_detail td {
-			border-right:1px solid #DBDBDB;
-			border-bottom:1px solid #DBDBDB;
-			border:0px;
-			text-align: left;
-		}
+		
 		</style>
 		<script type="text/javascript">
 			var contextPath = "<%=request.getContextPath()%>";
@@ -201,6 +56,7 @@
 			});
 			
 			jQuery(document).ready(function() {
+				$('ul.tabs li').eq(0).removeClass('active');
 				initClientDetail(customerId);
 				initClientResource(customerId);
 			});

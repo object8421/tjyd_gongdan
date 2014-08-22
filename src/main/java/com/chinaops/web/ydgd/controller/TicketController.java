@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.chinaops.web.common.entity.Page;
+import com.chinaops.web.ydgd.entity.Order;
+import com.chinaops.web.ydgd.entity.Ticket;
+import com.chinaops.web.ydgd.service.OrderService;
 import com.chinaops.web.ydgd.service.TicketService;
 
 /**
@@ -25,12 +28,21 @@ import com.chinaops.web.ydgd.service.TicketService;
  */
 @Controller
 public class TicketController {
+	@SuppressWarnings("unused")
 	private static final Log log = LogFactory.getLog(TicketController.class);
+	
 	private TicketService ticketService;
-
+	
+	private OrderService orderService;
+	
 	@Autowired
 	public void setTicketService(TicketService ticketService) {
 		this.ticketService = ticketService;
+	}
+	
+	@Autowired
+	public void setOrderService(OrderService orderService) {
+		this.orderService = orderService;
 	}
 
 	@RequestMapping("/ticket.htm")
@@ -64,4 +76,16 @@ public class TicketController {
 		return page;
 	}
 
+	@RequestMapping("/ticketView.htm")
+	public String view_get_ticket_by_customer_id_and_ticket_id(HttpServletRequest request, HttpServletResponse response){
+		return "ticket/ticketView";
+	}
+	
+	@RequestMapping(value = "/ticket_get_ticket_detail.json", method = RequestMethod.POST)
+	public @ResponseBody Ticket getTicketDetail(@RequestParam String ticketId,HttpServletRequest request, HttpServletResponse response){
+		Ticket ticket = ticketService.getTicketByTicketId(ticketId);
+		Order order = orderService.getOrderByTicketId(ticketId);
+		ticket.setOrder(order);
+		return ticket;
+	}
 }

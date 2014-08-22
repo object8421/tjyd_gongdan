@@ -47,6 +47,11 @@ public class TicketService {
 	public Page getTicketPage(int pageNo, int pageSize, String ticketType, String searchValue) {
 		return this.ticketDaoImpl.getTicketPage(pageNo, pageSize, ticketType,searchValue);
 	}
+
+	public Ticket getTicketByTicketId(String ticketId) {
+		return this.ticketDaoImpl.getTicketByTicketId(ticketId);
+	}
+
 	
 	
 }

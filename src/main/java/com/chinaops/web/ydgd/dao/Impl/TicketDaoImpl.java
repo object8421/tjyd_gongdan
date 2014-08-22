@@ -15,7 +15,6 @@ import java.util.List;
 import com.chinaops.web.common.entity.Page;
 import com.chinaops.web.ydgd.entity.Ticket;
 import com.chinaops.web.ydgd.utils.JDBCUtils;
-import com.mysql.jdbc.PreparedStatement;
 
 /**
  * 工单信息
@@ -26,7 +25,7 @@ public class TicketDaoImpl {
 	private Connection conn = null;
 	private Statement stmt = null;
 	private ResultSet rs = null;
-	private PreparedStatement  ptmt =null;
+//	private PreparedStatement  ptmt =null;
 
 	public Page selectTicketByName(int pageNo, int pageSize,
 			String fuzzySearchValue,String customerId) {
@@ -74,7 +73,7 @@ public class TicketDaoImpl {
 				ticket.setId(rs.getInt("id"));
 				ticket.setTicketId(rs.getString("ticket_id"));
 				ticket.setCustomerId(rs.getString("customer_id"));
-				ticket.setTicket_type(rs.getString("ticket_type"));
+				ticket.setTicketType(rs.getString("ticket_type"));
 				ticket.setTicketState(rs.getString("ticket_state"));
 				if(rs.getTimestamp("receive_time") != null){
 					String receiveTime = rs.getTimestamp("receive_time").toString();
@@ -87,6 +86,7 @@ public class TicketDaoImpl {
 					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
 				}
 				ticket.setCustomerName(rs.getString("customer_name"));
+				ticket.setIsModify(rs.getInt("is_modify"));
 				lists.add(ticket);
 			}
 
@@ -122,7 +122,7 @@ public class TicketDaoImpl {
 				ticket.setId(rs.getInt("id"));
 				ticket.setTicketId(rs.getString("ticket_id"));
 				ticket.setCustomerId(rs.getString("customer_id"));
-				ticket.setTicket_type(rs.getString("ticket_type"));
+				ticket.setTicketType(rs.getString("ticket_type"));
 				ticket.setTicketState(rs.getString("ticket_state"));
 				if(rs.getTimestamp("receive_time") != null){
 					String receiveTime = rs.getTimestamp("receive_time").toString();
@@ -134,6 +134,7 @@ public class TicketDaoImpl {
 					String sendTime = rs.getTimestamp("send_time").toString();
 					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
 				}
+				ticket.setIsModify(rs.getInt("is_modify"));
 				lists.add(ticket);
 			}
 		} catch (Exception e) {
@@ -156,7 +157,7 @@ public class TicketDaoImpl {
 				ticket.setId(rs.getInt("id"));
 				ticket.setTicketId(rs.getString("ticket_id"));
 				ticket.setCustomerId(rs.getString("customer_id"));
-				ticket.setTicket_type(rs.getString("ticket_type"));
+				ticket.setTicketType(rs.getString("ticket_type"));
 				ticket.setTicketState(rs.getString("ticket_state"));
 				if(rs.getTimestamp("receive_time") != null){
 					String receiveTime = rs.getTimestamp("receive_time").toString();
@@ -168,6 +169,7 @@ public class TicketDaoImpl {
 					String sendTime = rs.getTimestamp("send_time").toString();
 					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
 				}
+				ticket.setIsModify(rs.getInt("is_modify"));
 				lists.add(ticket);
 			}
 		} catch (Exception e) {
@@ -207,7 +209,7 @@ public class TicketDaoImpl {
 				ticket.setId(rs.getInt("id"));
 				ticket.setTicketId(rs.getString("ticket_id"));
 				ticket.setCustomerId(rs.getString("customer_id"));
-				ticket.setTicket_type(rs.getString("ticket_type"));
+				ticket.setTicketType(rs.getString("ticket_type"));
 				ticket.setTicketState(rs.getString("ticket_state"));
 				if(rs.getTimestamp("receive_time") != null){
 					String receiveTime = rs.getTimestamp("receive_time").toString();
@@ -220,6 +222,7 @@ public class TicketDaoImpl {
 					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
 				}
 				ticket.setCustomerName(rs.getString("customer_name"));
+				ticket.setIsModify(rs.getInt("is_modify"));
 				lists.add(ticket);
 			}
 	        // 总记录数
@@ -283,7 +286,7 @@ public class TicketDaoImpl {
 				ticket.setId(rs.getInt("id"));
 				ticket.setTicketId(rs.getString("ticket_id"));
 				ticket.setCustomerId(rs.getString("customer_id"));
-				ticket.setTicket_type(rs.getString("ticket_type"));
+				ticket.setTicketType(rs.getString("ticket_type"));
 				ticket.setTicketState(rs.getString("ticket_state"));
 				if(rs.getTimestamp("receive_time") != null){
 					String receiveTime = rs.getTimestamp("receive_time").toString();
@@ -296,6 +299,7 @@ public class TicketDaoImpl {
 					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
 				}
 				ticket.setCustomerName(rs.getString("customer_name"));
+				ticket.setIsModify(rs.getInt("is_modify"));
 				lists.add(ticket);
 			}
 	        // 总记录数
@@ -314,5 +318,37 @@ public class TicketDaoImpl {
 			JDBCUtils.closeResource(conn, stmt, rs);
 		}
 		return page;
+	}
+	public Ticket getTicketByTicketId(String ticketId) {
+		Ticket ticket = new Ticket();
+		String sql = "select * from ticket where ticket_id = '" + ticketId + "';";
+		try {
+			conn = JDBCUtils.getConnection();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
+			while (rs.next()) {
+				ticket.setId(rs.getInt("id"));
+				ticket.setTicketId(rs.getString("ticket_id"));
+				ticket.setCustomerId(rs.getString("customer_id"));
+				ticket.setTicketType(rs.getString("ticket_type"));
+				ticket.setTicketState(rs.getString("ticket_state"));
+				if(rs.getTimestamp("receive_time") != null){
+					String receiveTime = rs.getTimestamp("receive_time").toString();
+					ticket.setReceiveTime(receiveTime.substring(0,receiveTime.length()-2));
+				}
+				ticket.setIsUse(rs.getInt("is_use"));
+				ticket.setRemark(rs.getString("remark"));
+				if(rs.getTimestamp("send_time") != null){
+					String sendTime = rs.getTimestamp("send_time").toString();
+					ticket.setSendTime(sendTime.substring(0,sendTime.length()-2));
+				}
+				ticket.setIsModify(rs.getInt("is_modify"));
+			}
+			return ticket;
+		} catch (Exception e) {
+			throw new RuntimeException(e.getMessage(), e);
+		} finally {
+			JDBCUtils.closeResource(conn, stmt, rs);
+		}
 	}
 }

@@ -12,7 +12,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.chinaops.web.ydgd.dao.PrivilegesDao;
 import com.chinaops.web.ydgd.entity.Privileges;
 import com.chinaops.web.ydgd.entity.User;
 import com.chinaops.web.ydgd.utils.JDBCUtils;

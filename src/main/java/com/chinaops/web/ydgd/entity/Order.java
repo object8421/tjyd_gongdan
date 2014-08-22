@@ -5,12 +5,14 @@
  */
 package com.chinaops.web.ydgd.entity;
 
+import com.google.gwt.user.client.rpc.IsSerializable;
+
 
 /**
  *
  * @author liu
  */
-public class Order {
+public class Order implements IsSerializable {
     // ========================== Attributes ============================
     private int    id;
    //工单编号
@@ -26,7 +28,7 @@ public class Order {
     //产品类型:专享云,共享云,云存储
     private String productType;
     //是否做网站
-    private String isWebsite;
+    private String forWebsite;
     //开放端口
     private String openPorts;
     //要求开放端口,如有多个端口，请用英文半角的逗号分隔
@@ -36,7 +38,7 @@ public class Order {
     //折扣
     private String discount;
     //带宽
-    private String bandWidth;
+    private String bandwidth;
     //ip
     private String ip;
     //ip个数
@@ -121,11 +123,11 @@ public class Order {
 	public void setProductType(String productType) {
 		this.productType = productType;
 	}
-	public String getIsWebsite() {
-		return isWebsite;
+	public String getForWebsite() {
+		return forWebsite;
 	}
-	public void setIsWebsite(String isWebsite) {
-		this.isWebsite = isWebsite;
+	public void setForWebsite(String forWebsite) {
+		this.forWebsite = forWebsite;
 	}
 	public String getOpenPorts() {
 		return openPorts;
@@ -151,11 +153,11 @@ public class Order {
 	public void setDiscount(String discount) {
 		this.discount = discount;
 	}
-	public String getBandWidth() {
-		return bandWidth;
+	public String getBandwidth() {
+		return bandwidth;
 	}
-	public void setBandWidth(String bandWidth) {
-		this.bandWidth = bandWidth;
+	public void setBandwidth(String bandwidth) {
+		this.bandwidth = bandwidth;
 	}
 	public String getIp() {
 		return ip;

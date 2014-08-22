@@ -32,23 +32,39 @@ import com.chinaops.web.ydgd.service.TicketService;
  */
 @Controller
 public class OrderController {
+	@SuppressWarnings("unused")
 	private static final Log  log=LogFactory.getLog(OrderController.class);
+	
 	private TicketService ticketService;
+	
 	private OrderService orderService;
 	
 	@Autowired
 	public void setOrderService(OrderService orderService) {
 		this.orderService = orderService;
 	}
+	
 	@Autowired
 	public void setTicketService(TicketService ticketService) {
 		this.ticketService = ticketService;
 	}
+	
+	/**
+	 * 跳转到订单列表页
+	 * @param request
+	 * @param response
+	 * @return
+	 */
 	@RequestMapping("/order.htm")
 	public String clientPageShow( HttpServletRequest request, HttpServletResponse response){
 		return "order/order";
 	}
-	//查询一个客户的产品类型
+	
+	/**
+	 * 根据客户ID获得该客户所有的产品类型
+	 * @param customerId
+	 * @return
+	 */
 	@RequestMapping(value = "/order_get_product_type_by_ustomer_id.do", method = RequestMethod.POST)
 	public @ResponseBody
 	List<Order> selectProductTypes(@RequestParam String customerId) {
@@ -69,7 +85,12 @@ public class OrderController {
 		return  productTypes;
 	}
 
-	// 每个客户具体云平台的订单信息
+	/**
+	 * 根据客户ID和产品类型获得的订单信息
+	 * @param customerId
+	 * @param productType
+	 * @return
+	 */
 	@RequestMapping(value = "/order_get_by_productType_and_customerId.do", method = RequestMethod.POST)
 	public @ResponseBody
 	List<Order> selectOrderInfoByProductType(@RequestParam String customerId,@RequestParam String productType) {

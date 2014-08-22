@@ -20,7 +20,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.chinaops.web.common.entity.EcloudUserDetails;
 import com.chinaops.web.common.entity.SysAdminUserDetails;
 import com.chinaops.web.ydgd.entity.Privileges;
 import com.chinaops.web.ydgd.entity.User;

@@ -13,31 +13,7 @@
 	    <script src="<c:url value='/js/zDrag.js'/>"></script>
 	    <script src="<c:url value='/js/zDialog.js'/>"></script>
 		<style type="text/css">
-			select {
-				margin:0;
-				font-size:12px;
-				width:170px;
-				font-family:Tahoma, SimSun, sans-serif;
-			}	
-			input[type='text'],input[type='password']{
-				margin:0;
-				font-size:12px;
-				width:164px;
-				font-family:Tahoma, SimSun, sans-serif;
-			}
-			.Dialog td {
-				padding:5px;
-			}
-			td.opera span {
-				color:blue;
-				cursor: pointer;
-			}
-			.msg-css {
-				color:#666;
-			}
-			.isModPassword {
-				display: none;
-			}
+			
 		</style>
 		<script type="text/javascript">
 			var contextPath = "<%=request.getContextPath()%>";
@@ -65,23 +41,23 @@
 					</div>
 				</div>
 				<div class="data-body">
-					<table>
+					<table class="header">
 						<tr>
 							<th width="20%">编号</th>
 							<th width="50%" style="text-align:left;">客户名称</th>
 							<th width="30%">操作</th>
 						</tr>
 					</table>
-					<table id="data_client">
+					<table id="data_client" border="0">
 						<tr>
 							<td><img src="<c:url value='/images/icon/loading2.gif'/>"/></td>
 						</tr>
 					</table>
-					<table class="pager" cellspacing="0" cellpadding="0" width="100%" style="background:#EEE;" border="0">
+					<table class="pager" cellspacing="0" cellpadding="0" width="100%" border="0">
 						<tr>
-							<td style="text-align:right">
+							<th style="text-align:right">
 								<span>共<span id="totalNumber"></span>条记录　共<span id="totalPage"></span>页 　当前第<span id="pageNum">1</span>页　 <span id="dept_first" class="a-span" onclick="FirstPage()">首页</span> 　<span id="dept_pre" class="a-span" onclick="PrevPage()">上一页</span>　 <span id="dept_next" class="a-span" onclick="NextPage()">下一页</span>　 <span id="dept_last" class="a-span" onclick="LastPage()">末页</span></span>
-							</td>
+							</th>
 						</tr>
 					</table>
 				</div>

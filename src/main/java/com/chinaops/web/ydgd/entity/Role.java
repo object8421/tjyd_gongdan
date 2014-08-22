@@ -9,23 +9,38 @@ import com.google.gwt.user.client.rpc.IsSerializable;
 
 /**
  *
- * @author hiumin_angle
+ * @author liqiang.zhang@china-ops.com
  */
 public class Role implements IsSerializable {
     
     private int id;
     
-    private String role_name;
+    private String roleName;
     
-    // ========================== Attributes ============================
+    private RoleEnum roleType;
 
-    // ========================= Constructors ===========================
+	public int getId() {
+		return id;
+	}
 
-    // ======================= Getters & Setters ========================
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    // ======================== Public methods ==========================
+	public String getRoleName() {
+		return roleName;
+	}
 
-    // ==================== Private utility methods =====================
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
 
-    // ========================== main method ===========================
+	public RoleEnum getRoleType() {
+		return roleType;
+	}
+
+	public void setRoleType(RoleEnum roleType) {
+		this.roleType = roleType;
+	}
+
 }

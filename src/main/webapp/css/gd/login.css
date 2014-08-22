@@ -4,18 +4,20 @@
 	padding: 0;
 	border: 0;
 }
-
 body {
+	background:url('../../images/back.jpg') no-repeat fixed top #EFEFEF;
+	padding:0px;
 	margin: 0 auto;
 	text-align: center;
+	font: 12px/1.33 "宋体",Verdana,Helvetica,sans-serif;
 }
-
 .container {
 	width: 1003px;
 	height: 100%;
 	border: 0;
 	margin: 0 auto;
 	text-align: left;
+	margin-top:20px;
 }
 
 .input_Login {
@@ -30,7 +32,7 @@ body {
 .top {
 	width: 1003px;
 	height: 58px;
-	background: url("../../images/main-header.png") repeat-x;
+	/* background: url("../../images/main-header.png") repeat-x; */
 }
 
 .top_logo {
@@ -47,7 +49,10 @@ body {
 	width: 445px;
 	height: 65px;
 }
-
+.top_logo2 img {
+	margin-bottom: -25px;
+	margin-left:10px;
+}
 .top_wo_logo {
 	float: right;
 }
@@ -162,9 +167,10 @@ body {
 .footer {
 	width: 1003px;
 	height: 50px;
-	background: url("../../images/bottom-bg.jpg") repeat-x;
+	background: url("../../images/bottom-bg.jpg") repeat-x #FFF;
 	font-size: 12px;
-	line-height: 20px;
+	line-height: 50px;
+	text-align: center;
 }
 
 .copy_right {

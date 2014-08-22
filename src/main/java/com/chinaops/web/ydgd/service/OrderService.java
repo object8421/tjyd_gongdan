@@ -35,4 +35,8 @@ public class OrderService {
 		return this.orderDaoImpl.selectOrderByProductType(ticketIdS, productType);
 
 	}
+
+	public Order getOrderByTicketId(String ticketId) {
+		return this.orderDaoImpl.getOrderByTicketId(ticketId);
+	}
 }

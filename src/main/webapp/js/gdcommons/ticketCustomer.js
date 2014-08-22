@@ -13,7 +13,7 @@ function initTicketListCustomer(){
 			if(page != null && page.list.length > 0){
 				for(var i=0;i<page.list.length;i++){
 					var ticketType = "";
-					var ticket_type = page.list[i].ticket_type;
+					var ticket_type = page.list[i].ticketType;
 					if(ticket_type =="open"){
 	                	ticketType = "开通工单";
 	                }else if(ticket_type == "modify"){
@@ -25,17 +25,23 @@ function initTicketListCustomer(){
 					}else if(ticket_type == "reset"){
 						ticketType = "恢复工单";
 					}
-					str += "<tr><td width='15%'>"+page.list[i].ticketId+"</td>" +
-							"<td width='30%'>"+page.list[i].customerName+"</td>" +
-							"<td width='15%'>"+ticketType+"</td>" +
-							"<td width='15%'>"+page.list[i].receiveTime+"</td>" +
-							"<td width='25%' class='opera'>";
-							if(roleType == 'cfm'){
-								str += "[<span onclick='modifyUser("+page.list[i].id+")'>编辑</span>] [<span onclick='deleteUser("+page.list[i].id+")'>查看</span>]";
-							}else if(roleType == 'user'){
-								str += "[<span onclick='deleteUser("+page.list[i].id+")'>查看</span>]";
-							}
-							"</td></tr>";
+					str += '<form></form><tr><td width="15%">'+page.list[i].ticketId+'</td>' +
+						'<td width="30%">'+page.list[i].customerName+'</td>' +
+						'<td width="15%">'+ticketType+'</td>' +
+						'<td width="15%">'+page.list[i].receiveTime+'</td>' +
+						'<td width="25%" class="opera">' +
+						'<form action="" name="form'+page.list[i].customerId+''+page.list[i].ticketId+'" id="form'+page.list[i].customerId+''+page.list[i].ticketId+'" method="POST">' +
+							'<input name="customerId" type="hidden" value="'+page.list[i].customerId+'"/>' +
+							'<input name="ticketId" type="hidden" value="'+page.list[i].ticketId+'"/>' +
+							'<input name="ticketType" type="hidden" value="'+page.list[i].ticketType+'"/>';
+						if(roleType == 'cfm'){
+							str += '[<span onclick="modifyTicket('+page.list[i].customerId+','+page.list[i].ticketId+',\''+page.list[i].ticketType+'\');">编辑</span>]' +
+								  ' [<span onclick="viewTicket('+page.list[i].customerId+','+page.list[i].ticketId+',\''+page.list[i].ticketType+'\');">查看</span>]';
+						}else if(roleType == 'user'){
+							str += '[<span onclick="viewTicket('+page.list[i].customerId+','+page.list[i].ticketId+',\''+page.list[i].ticketType+'\');">查看</span>]';
+						}
+						'</form></td></tr>';
+
 				}
 			}else{
 				str += "<tr><td clospan='4'>没有工单</td></tr>"
@@ -55,6 +61,13 @@ function initTicketListCustomer(){
 		dataType : "json"
 	});
 }
+
+function viewTicket (customerId,ticketId,ticketType){
+	var form = document.getElementById("form"+customerId+""+ticketId);
+	form.action = "ticketView.htm";
+	form.submit();
+}
+
 
 //上一页
 function PrevPage(){

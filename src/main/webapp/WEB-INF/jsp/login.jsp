@@ -54,7 +54,7 @@
 			<div class="top">
 
 				<div class="top_logo2">
-					<img src="images/header-logo.png" border="0">
+					<img src="images/logo_bac.png" border="0">
 				</div>
 				<div class="top_wo_logo"></div>
 
@@ -117,7 +117,7 @@
 								class="input_Login" maxlength="4" /></span> <img id="imgObj"
 								title="点击更换数字" src="<c:url value='/captcha'/>"
 								onclick="changeImg()"
-								style="cursor: pointer; height: 27px; width: 75px; position: absolute; padding-left: 5px;" />
+								style="cursor: pointer; height: 26px; width: 75px; position: absolute; padding-left: 5px;" />
 							<a href="javascript:changeImg();"
 								style="margin-left: 90px; font-size: 14px;">看不清楚？</a>
 						</div>
@@ -133,13 +133,14 @@
 				<!-- end of login form -->
 			</div>
 			<!--footer -->
-			<div class="footer">
+			<jsp:include page="footer.jsp"/>
+			<%-- <div class="footer">
 				<div class="copy_right">
 					<div class="bottom-logo" style="display: none">
 						<img src="<c:url value='images/footer.png'/>" border="0" />
 					</div>
 				</div>
-			</div>
+			</div> --%>
 		</form>
 	</div>
 	<!-- body end -->

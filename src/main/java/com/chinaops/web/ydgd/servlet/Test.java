@@ -6,12 +6,9 @@
  */
 package com.chinaops.web.ydgd.servlet;
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.chinaops.web.ydgd.utils.StringHelper;
 
 /**
  * Description: Copyright (c) Department of Research and

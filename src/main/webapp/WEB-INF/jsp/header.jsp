@@ -17,6 +17,7 @@
 	padding:0px 5px;
 	cursor: pointer;
 	position: relative;
+	color:#FFFF99;
 	z-index: 2;
 }
 .layoutPassword {
@@ -30,6 +31,9 @@
     top: 109px;
     width: 100px;
     z-index: 1;
+}
+.layoutPassword:hover {
+	color:blue;
 }
 ul {
 	list-style: none;
@@ -61,6 +65,9 @@ ul li {
 .modifyPasswordDialog .msg-error {
 	color:#666;
 }
+.up {
+	color:#2F6DB3;
+}
 </style>
 <%
 	Object principal1 = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -82,10 +89,16 @@ ul li {
 			if($(".layoutPassword").css("display") == "block"){
 				$(this).removeClass("showPassword");
 				$(this).children("img").attr("src","<c:url value='/images/header_down.png'/>");
+				$(this).removeClass("up");
 			}else{
 				$(this).addClass("showPassword");
 				$(this).children("img").attr("src","<c:url value='/images/header_up.png'/>");
+				$(this).addClass("up");
 			}
+			$(".layoutPassword").css({
+				left:$(this).position().left-1+"px",
+				top: $(this).position().top+39
+			});
 			$(".layoutPassword").toggle();
 		});
 		
@@ -154,10 +167,9 @@ ul li {
 			diag.show();
 		});
 	});
-	
 </script>
 
-<div style="height:60px;background:green;"> </div>
+<div class="yd-gongdan-logo"> </div>
 <div class="banner-nav"> 
 	<div class="banner-left">
 	<%
@@ -179,7 +191,7 @@ ul li {
 			<%=user.getUsername() %><img src="<c:url value='/images/header_down.png'/>"/>
 		</div> &nbsp;&nbsp;
 		<ul class="layoutPassword" style="display: none;"><li id="modifyPassword">修改密码</li></ul>
-		<div><a href="<c:url value='/j_spring_security_logout'/>"><img src="<c:url value='/images/layout.png'/>"/> 退出</a></div>
+		<div class="banner-layout"><a href="<c:url value='/j_spring_security_logout'/>"><img style="padding-top:10px;" src="<c:url value='/images/layout.png'/>"/> 退出</a></div>
 	</div>
 </div>
 <div id="modifyPasswordDialog" class="modifyPasswordDialog" style="display: none;">

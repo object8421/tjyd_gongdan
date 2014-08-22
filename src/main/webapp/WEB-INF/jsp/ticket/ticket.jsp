@@ -95,7 +95,7 @@
 			<%} %>
 			</div>
 			<div class="data-body">
-				<table>
+				<table class="header">
 					<tr>
 						<th width="15%">工单号</th>
 						<th width="30%">客户名称</th>
@@ -109,11 +109,11 @@
 						<td><img src="<c:url value='/images/icon/loading2.gif'/>"/></td>
 					</tr>
 				</table>
-				<table class="pager" cellspacing="0" cellpadding="0" width="100%" style="background:#EEE;" border="0">
+				<table class="pager" cellspacing="0" cellpadding="0" width="100%" border="0">
 					<tr>
-						<td style="text-align:right">
+						<th style="text-align:right">
 							<span>共<span id="totalNumber"></span>条记录　共<span id="totalPage"></span>页 　当前第<span id="pageNum">1</span>页　 <span id="dept_first" class="a-span" onclick="FirstPage()">首页</span> 　<span id="dept_pre" class="a-span" onclick="PrevPage()">上一页</span>　 <span id="dept_next" class="a-span" onclick="NextPage()">下一页</span>　 <span id="dept_last" class="a-span" onclick="LastPage()">末页</span></span>
-						</td>
+						</th>
 					</tr>
 				</table>
 			</div>
